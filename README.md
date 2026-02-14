@@ -1,5 +1,13 @@
 # Islands Dark
 
+<a href="https://www.buymeacoffee.com/bwya77" style="margin-right: 10px;">
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" />
+</a>
+<a href="https://github.com/sponsors/bwya77">
+    <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" />
+</a>
+
+
 A dark color theme for Visual Studio Code inspired by JetBrains' Islands Dark theme. Features floating glass-like panels, rounded corners, smooth animations, and a deeply refined UI.
 
 ![Islands Dark Screenshot](assets/CleanShot%202026-02-13%20at%2023.27.47@2x.png)
