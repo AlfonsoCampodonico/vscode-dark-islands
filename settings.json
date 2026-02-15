@@ -142,6 +142,9 @@
    ".monaco-breadcrumbs:hover *": {
       "opacity": "1 !important"
    },
+   ".split-view-view:has(.terminal-tabs-entry)": {
+      "min-width": "220px !important"
+   },
    ".viewpane-filter .monaco-inputbox": {
       "border-radius": "9999px !important"
    },
