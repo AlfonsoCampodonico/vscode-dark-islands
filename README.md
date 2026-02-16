@@ -10,7 +10,7 @@
 
 ## **THIS THEME IS STILL A WORK IN PROGRESS**
 
-A dark color theme for Visual Studio Code inspired by JetBrains' Islands Dark theme. Features floating glass-like panels, rounded corners, smooth animations, and a deeply refined UI.
+A dark color theme for Visual Studio Code and Cursor inspired by JetBrains' Islands Dark theme. Features floating glass-like panels, rounded corners, smooth animations, and a deeply refined UI.
 
 ![Islands Dark Screenshot](assets/CleanShot%202026-02-14%20at%2021.47.05@2x.png)
 
@@ -70,12 +70,12 @@ cd islands-dark
 .\install.ps1
 ```
 
-The scripts will automatically:
+The scripts will automatically detect VS Code and/or Cursor and:
 - ✅ Install the Islands Dark theme extension
 - ✅ Install the Custom UI Style extension
 - ✅ Install Bear Sans UI fonts
-- ✅ Merge settings into your VS Code: configuration
-- ✅ Enable Custom UI Style and reload VS Code:
+- ✅ Merge settings into your configuration
+- ✅ Enable Custom UI Style and reload your editor
 
 > **Note:** IBM Plex Mono and FiraCode Nerd Font Mono must be installed separately (the script will remind you).
 
@@ -90,16 +90,31 @@ Clone this repo and copy the extension files:
 ```bash
 git clone https://github.com/bwya77/vscode-dark-islands.git islands-dark
 cd islands-dark
+
+# For VS Code:
 mkdir -p ~/.vscode/extensions/bwya77.islands-dark-1.0.0
 cp package.json ~/.vscode/extensions/bwya77.islands-dark-1.0.0/
 cp -r themes ~/.vscode/extensions/bwya77.islands-dark-1.0.0/
+
+# For Cursor:
+mkdir -p ~/.cursor/extensions/bwya77.islands-dark-1.0.0
+cp package.json ~/.cursor/extensions/bwya77.islands-dark-1.0.0/
+cp -r themes ~/.cursor/extensions/bwya77.islands-dark-1.0.0/
 ```
 
 On Windows (PowerShell):
 ```powershell
 git clone https://github.com/bwya77/vscode-dark-islands.git islands-dark
 cd islands-dark
+
+# For VS Code:
 $ext = "$env:USERPROFILE\.vscode\extensions\bwya77.islands-dark-1.0.0"
+New-Item -ItemType Directory -Path $ext -Force
+Copy-Item package.json $ext\
+Copy-Item themes $ext\themes -Recurse
+
+# For Cursor:
+$ext = "$env:USERPROFILE\.cursor\extensions\bwya77.islands-dark-1.0.0"
 New-Item -ItemType Directory -Path $ext -Force
 Copy-Item package.json $ext\
 Copy-Item themes $ext\themes -Recurse

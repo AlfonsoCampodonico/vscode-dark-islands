@@ -16,7 +16,8 @@
     "theme",
     "islands",
     "jetbrains",
-    "color theme"
+    "color theme",
+    "cursor"
   ],
   "icon": "icon.png",
   "repository": {
